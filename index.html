@@ -91,14 +91,16 @@
 			function updateClock() {
 				var days = ['SUNDAY','MONDAY','TUESDAY','WEDNESDAY','THURSDAY','FRIDAY','SATURDAY'];
 				var m = new Date();
+				var hours = m.getHours() % 12;
+				hours = hours ? hours : 12;
 				var dateString =
 				(days[ m.getDay() ]) + " " +
-				("0" + m.getDate()).slice(-2) + "/" +
 				("0" + (m.getMonth()+1)).slice(-2) +"/"+
+				("0" + m.getDate()).slice(-2) + "/" +
 				m.getFullYear() +" "+
-				("0" + m.getHours()).slice(-2) + ":" +
-				("0" + m.getMinutes()).slice(-2) + ":" +
-				("0" + m.getSeconds()).slice(-2);
+				("00" + hours).slice(-2) + ":" + 
+				("00" + m.getMinutes()).slice(-2) + ":" + 
+				("00" + m.getSeconds()).slice(-2) + ' ' + (m.getHours() >= 12 ? 'PM' : 'AM'); 
 
 				// set the content of the element with the ID codes to the formatted string
 				document.getElementById('codes').innerHTML = dateString;
