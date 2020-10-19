@@ -7,8 +7,8 @@ body {
   font-family: 'Iosevka', monospace;
   font-size: 20px;
   background-color: #0F0F12;
-  background-image: url("img/");
-  background-repeat: repeat;
+  background-image: url("img/bg.jpg");
+  background-repeat: no-repeat;
   width: 670px;
   height: 320px;
   position: absolute;
@@ -25,10 +25,6 @@ h1 {
   position: relative;
   text-align: center;
   horizontal-align: middle;
-}
-
-.flair {
-  color: #0972D6;
 }
 
 .main {
