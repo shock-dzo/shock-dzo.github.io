@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<!--Starpage by -->
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>home</title>
+	<link rel="stylesheet" style="text/css" href="general.css" />
+	<link rel="shortcut icon" href="img/home.ico">
+	<link rel="icon" sizes="16x16 32x32 64x64" href="img/home.ico">
+	<link rel="icon" type="image/png" sizes="196x196" href="img/home-192.png">
+	<link rel="icon" type="image/png" sizes="160x160" href="img/home-160.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="img/home-96.png">
+	<link rel="icon" type="image/png" sizes="64x64" href="img/home-64.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="img/home-32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="img/home-16.png">
+	<link rel="apple-touch-icon" href="img/home-57.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/home-114.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/home-72.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="img/home-144.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="img/home-60.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="img/home-120.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="img/home-76.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="img/home-152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="img/home-180.png">
+	<meta name="msapplication-TileColor" content="#FFFFFF">
+	<meta name="msapplication-TileImage" content="img/home-144.png">
+	<meta name="msapplication-config" content="img/browserconfig.xml">
+	<script src="https://kit.fontawesome.com/77eb2cee28.js" crossorigin="anonymous"></script>
+<style>
+body {
+		background-image: url("img/bg.jpg");
+		background-repeat: no-repeat;
+}
+</style>
+</head>
+
+<body>
+	<div class="main" style="display: block">
+		<div class="image-wrapper">
+		
+			<div class="mySlides fade">
+				<img src="img/side21.png">
+			</div>
+		</div>
+		<br>
+
+		<header>
+			<h1>おかえりなさいませ</h1>
+		</header>
+
+		<nav>		
+			<br>
+			<ul class="blue">
+				<li><a href="https://www.facebook.com/">Facebook</a></li>
+				<li><a href="https://www.twitter.com/">Twitter</a></li>				
+				<li><a href="https://www.reddit.com/">Reddit</a></li>
+				<li><a href="https://www.instagram.com/">Instagram</a></li>
+				<br>
+				<li><a href="https://www.google.com/">Google</a></li>
+				<li><a href="https://www.outlook.com/">Outlook</a></li>				
+				<li><a href="https://www.my100bank.com/">Banking</a></li>
+				<li><a href="https://github.com/shock-dzo/shock-dzo.github.io">GitHub</a></li>
+			</ul>
+
+			<ul class="red">
+				<li><a href="https://www.youtube.com/">YouTube</a></li>
+				<li><a href="http://localhost:32400/web/index.html#">Plex</a></li>
+				<li><a href="https://www.twitch.tv/directory/following/live">Twitch</a></li>
+				<li><a href="https://suptv.org/">SupTV</a></li>
+				<br>
+				<li><a href="https://www.hulu.com">Hulu</a></li>					
+				<li><a href="https://www.disneyplus.com">Disney+</a></li>
+			</ul>
+
+			<ul class="blue">
+				<li><a href="https://www.amazon.com">Amazon</a></li>
+				<li><a href="https://www.walmart.com">Walmart</a></li>
+				<li><a href="https://www.newegg.com">Newegg</a></li>
+				<li><a href="https://www.ebay.com">Ebay</a></li>
+			</ul>
+
+			<ul class="yellow">
+				<li><a href="https://rarbg.to/">RARBG</a></li>
+				<li><a href="https://yts.mx/">YIFY</a></li>
+				<li><a href="https://1337x.to/">1337x</a></li>
+				<li><a href="https://openpirate.org/">piratebay</a></li>
+				<br>
+				<li><a href="http://speedtest.net/">Speedtest</a></li>
+				<li><a href="https://www.pcpartpicker.com/">PCPartpicker</a></li>
+				<li><a href="http://picturepub.net/index.php">PicturePub</a></li>
+			</ul>
+			
+			<ul class="green">
+				<li><a href="http://boards.4chan.org/b/">/b/</a></li>
+				<li><a href="http://boards.4chan.org/g/">/g/</a></li>
+				<li><a href="http://boards.4chan.org/gif/">/gif/</a></li>
+				<li><a href="http://boards.4chan.org/hr/">/hr/</a></li>
+				<br>
+				<li><a href="http://boards.4chan.org/pol/">/pol/</a></li>
+				<li><a href="http://boards.4chan.org/tv/">/tv/</a></li>
+				<li><a href="https://wikieat.club/cel/catalog.html">/cel/</a></li>
+			</ul>
+
+			<a href="http://192.168.0.1/login.asp"><img src="img/lan.png" alt="CGN-SDL" style="width:20px;height:20px;"></a>
+		</nav>
+		<br>
+		<br>
+		
+		<div class="codes" id="codes">
+			<script>
+			//document.getElementById("main").innerHTML = Date();
+			function updateClock() {
+				var days = ['SUNDAY','MONDAY','TUESDAY','WEDNESDAY','THURSDAY','FRIDAY','SATURDAY'];
+				var m = new Date();
+				var hours = m.getHours() % 12;
+				hours = hours ? hours : 12;
+				var dateString =
+				(days[ m.getDay() ]) + " " +
+				("0" + (m.getMonth()+1)).slice(-2) +"/"+
+				("0" + m.getDate()).slice(-2) + "/" +
+				m.getFullYear() +" "+
+				("00" + hours).slice(-2) + ":" + 
+				("00" + m.getMinutes()).slice(-2) + ":" + 
+				("00" + m.getSeconds()).slice(-2) + ' ' + (m.getHours() >= 12 ? 'PM' : 'AM'); 
+
+				// set the content of the element with the ID codes to the formatted string
+				document.getElementById('codes').innerHTML = dateString;
+
+				// call this function again in 1000ms
+				setTimeout(updateClock, 1000);
+			}
+			updateClock(); // initial call
+			</script>
+		</div>
+	</body>
+	</html>
