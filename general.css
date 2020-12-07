@@ -184,3 +184,62 @@ ul[class=yellow] > li > a:hover {
   color: #edd934;
   transition: all 0.5s;
 }
+
+.main form{
+	-webkit-box-shadow: 4px 4px 15px -5px rgba(0,0,0,0.25);
+	-moz-box-shadow: 4px 4px 15px -5px rgba(0,0,0,0.25);
+	box-shadow: 4px 4px 15px -5px rgba(0,0,0,0.25);
+}
+
+/* ------------- CONTAINER STYLING ------------- */
+
+.main form {
+	background-color: #2E3441;
+	border-radius: 5px;
+	width: 400px;
+	margin-top: 10px;
+	margin-bottom: 5px;
+	align: center;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	display: inline-block;
+}
+
+.main form .search-field, .main form .search-submit {
+	background: none;
+	outline: none;
+	border: none;
+	line-height: 40px;
+	position: relative;
+}
+
+.main form .search-field {
+	width: 79%;
+	padding-left: 15px;
+	color: #BFBFBF;
+	font-size: 20px;
+	font-family: Iosevka, monospace;
+	bottom: -1px;
+}
+
+.main form .search-submit {
+	width: 10%;
+	top: 5px;
+}
+
+.main form .search-submit:hover {
+	cursor: pointer;
+}
+
+.main form .search-submit::before {
+	background-image:url(google1.svg);
+	background-position:center center;
+	fill: white;
+	content:"";
+	width:23px;
+	height:23px;
+	position:absolute;
+	right:5px;
+	bottom: 2px;
+}
